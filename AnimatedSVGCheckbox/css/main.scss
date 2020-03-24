@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	height: 100vh;
+	display: grid;
+	place-content: center;
+	background: #F2F2F2;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #0165E7;
+}
+
+.inner {
+	padding: .5em;
+	border-radius: .3em;
+	width: 200px;
+	box-shadow: 
+	7px 7px 5px rgba(0,0,0,.04),
+	-7px -7px 5px rgba(255,255,255,.8);
+	border: 2px solid rgb(235, 235, 235);
+}
+
+input[type=checkbox] {
+	display: none;
+	pointer-events: none;
+
+	& + label {
+			cursor: pointer;
+			font-size: .8em;
+			display: grid;
+			grid-template-columns: auto 3fr;
+
+			svg {
+					width: 2em;
+					stroke: rgb(0,124,226);
+					stroke-width: 5;
+					fill: white;
+
+					.box {
+							stroke-dasharray: 320;
+							stroke-dashoffset: 0;
+							fill: white !important;
+					}
+					.check {
+							stroke-dasharray: 70;
+							stroke-dashoffset: 70;
+							fill: none;
+					}
+			}
+
+			span {
+					padding-top: .3em;
+					margin-left: .3em;
+			}
+	}
+
+	&:checked + label {
+			.box {
+					stroke-dashoffset: 320;
+					transition: stroke-dashoffset .3s linear;
+			}
+			.check {
+					stroke-dashoffset: 0;
+					transition: stroke-dashoffset .3s linear;
+			}
+	}
+}
+
+.reverse {
+	.box {
+			stroke-dashoffset: 0;
+			transition: stroke-dashoffset .3s linear;
+	}
+	.check {
+			stroke-dashoffset: 70;
+			transition: stroke-dashoffset .3s linear;
+	}
+}
