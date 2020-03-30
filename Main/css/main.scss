@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background: #19191c;
+  font-family: "Montserrat";
+}
+
+.title {
+  text-align: center;
+
+  h1 {
+    font-size: 3em;
+    color: white;
+  }
+}
+
+.navigationContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-inline-start: 0px;
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+  a {
+    text-decoration: none;
+
+    li {
+      height: 240px;
+      background-color: #303035a1;
+      border-radius: 8px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      .card {
+        height: 100%;
+        width: 100%;
+      }
+
+      .bg-img {
+        background-size: cover;
+        background-position: center;
+        height: 60%;
+        width: 100%;
+        opacity: 0.2;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .content {
+        height: 40%;
+        display: flex;
+				align-items: center;
+				
+        span {
+          text-align: center;
+          margin: auto;
+          display: block;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 1.5em;
+          color: #807582;
+        }
+      }
+
+      &:hover {
+        transition: ease-in;
+        transition-duration: 0.2s;
+        background-color: #525255a1;
+      }
+    }
+  }
+}
