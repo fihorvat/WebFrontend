@@ -1,0 +1,143 @@
+html {
+  font-family: 'AdobeGaramondW01-Regula', georgia, serif;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: rgba(216, 223, 225, 0.8);
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+img {
+  height: 85vh;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+div.headlines {
+  padding-bottom: 1.6rem;
+}
+
+h1 {
+  font-size: 10vw;
+  color: #376893;
+}
+
+h2 {
+  margin: 1.4em 0 0.8em;
+  color: #2c5375;
+}
+
+h4, h6 {
+  font-weight: normal;
+}
+
+h4 {
+  margin: 1.6em 0;
+  font-size: 3.5vw;
+}
+
+h6 {
+  margin: 0;
+  font-size: 2.5vw;
+  font-style: italic;
+}
+
+@media (min-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  img {
+    float: left;
+    height: 100vh;
+    width: 48vw;
+  }
+  div.headlines {
+    float: right;
+    height: 100vh;
+    padding: 2vh 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  div.headlines div {
+    margin: auto;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 5vw;
+  }
+  h4 {
+    margin: 1.8em 0 6em;
+    font-size: 1.8vw;
+  }
+  h6 {
+    margin: 0.5em 0;
+    font-size: 1.3vw;
+    font-style: italic;
+  }
+}
+
+section {
+  clear: both;
+  padding: 2em 8vw 4em 17vw;
+  -webkit-columns: 260px;
+          columns: 260px;
+  -webkit-column-gap: 3em;
+          column-gap: 3em;
+  background-color: #fff;
+}
+
+@media (min-width: 600px) {
+  section {
+    padding: 4em 6vw 4em 22vw;
+  }
+}
+
+section p:first-child {
+  margin-top: 0;
+}
+
+@supports (initial-letter: 4) or (-webkit-initial-letter: 4) {
+  section p:first-child::first-letter {
+    color: #4b87bc;
+    font-weight: bold;
+    margin-right: 0.5em;
+    margin-top: 1em;
+    -webkit-initial-letter: 5;
+    initial-letter: 5 4;
+  }
+}
+
+@supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+  section h2 > p::first-letter {
+    color: #4b87bc;
+    font-weight: bold;
+    margin-right: 0.5em;
+    -webkit-initial-letter: 2;
+    initial-letter: 2 1;
+  }
+}
+
+.pullquote {
+  margin: 2.4rem 0 2.4rem;
+  color: #4b87bc;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
