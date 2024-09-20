@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <div>
+      <p>This is a content on body</p>
+      <div id="show-modal">
+        <p>Click the button to open the modal</p>
+        <button id="open">Open modal</button>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="modal-fullscreen-background"></div>
+      <div class="modal">
+        <div class="modal-header">
+          <div class="modal-header-content">
+            <p>Some header</p>
+            <div>
+              <button id="minimize-maximize">🗗</button>
+              <button id="close">X</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-content">Some content</div>
+        <div class="modal-footer">Some footer</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

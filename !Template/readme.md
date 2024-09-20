@@ -1,6 +1,6 @@
-# Template 
+# Template
 
-This is the project...)
+This is the project...
 
 # How it looks
 

@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.left {
+  background: rgb(186, 228, 241);
+}
+
+.right {
+  background: rgb(185, 236, 185);
+}
